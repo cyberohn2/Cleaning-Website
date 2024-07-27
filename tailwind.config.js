@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {"veitnam": '"Be Vietnam Pro", sans-serif'}
+    },
   },
   plugins: [],
 }
