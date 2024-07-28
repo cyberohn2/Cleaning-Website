@@ -5,7 +5,7 @@ import aboutImage from "/images/about-image.png"
 
 const About = () =>{
     return(
-        <div className="flex flex-col sm:flex-row justify-between py-[56px] max-w-[1080px] mx-auto px-8">
+        <div id="about" className="flex flex-col sm:flex-row justify-between py-[56px] max-w-[1080px] mx-auto px-8">
             <div className="w-full sm:w-[500px] h-[325px] sm:h-auto" style={{backgroundImage: `url(${aboutImage})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: "no-repeat"}}></div>
             <div className="sm:max-w-[394px]">
                 <h2 className="text-[33px] font-semibold mb-[12px]">Welcome To Our Pro-cleaning Company!</h2>

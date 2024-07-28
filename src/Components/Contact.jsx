@@ -44,7 +44,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="py-[56px] flex flex-col sm:flex-row justify-between gap-4 max-w-[1080px] mx-auto px-8">
+        <div id="contact" className="py-[56px] flex flex-col sm:flex-row justify-between gap-4 max-w-[1080px] mx-auto px-8">
             <div className="sm:w-[500px]">
                 <h2 className="mb-[30px] text-[30px] font-semibold">Find us</h2>
                 <div className="flex flex-col gap-[22px]">

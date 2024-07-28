@@ -42,7 +42,7 @@ const BlogItem = ({image, name, title, desc}) =>{
 const Blog = () =>{
     return(
         <>
-            <div className="text-[#111d15] pt-[113px] pb-[56px] max-w-[1080px] mx-auto px-8">
+            <div id="blog" className="text-[#111d15] pt-[113px] pb-[56px] max-w-[1080px] mx-auto px-8">
                 <div className="flex items-center gap-2 justify-between">
                     <h2 className="sm:text-[33px] text-[16px] font-semibold max-w-[402px]">Stay Updated with Our Tips & Service News!</h2>
                     <div className="max-w-[324.75px] text-right sm:text-left">

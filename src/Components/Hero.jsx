@@ -4,7 +4,7 @@ import HeroImg from "/images/hero-img.png"
 
 const Hero = () =>{ 
     return(
-        <div style={{backgroundImage: `url(${HeroImg})`, backgroundSize: 'cover', backgroundPosition: 'center',}} className="max-w-[1440px] mx-auto px-8 ">
+        <div id="hero" style={{backgroundImage: `url(${HeroImg})`, backgroundSize: 'cover', backgroundPosition: 'center',}} className="max-w-[1440px] mx-auto px-8 ">
             <div className="max-w-[1080px] mx-auto py-[6.875rem] ">
                 <div className="hero-content mr-auto max-w-[450px]">
                     <div className="mb-[30px]">
