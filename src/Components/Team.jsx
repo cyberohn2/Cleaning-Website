@@ -44,17 +44,17 @@ const TeamItem = ({image,rating, desc, name}) =>{
 
     return(
         <div className="pb-[15px] rounded-[15px] border">
-            <img src={image} alt="" className="mb-[18px] w-full" />
+            <img loading="lazy"src={image} alt="" className="mb-[18px] w-full" />
             <div className="w-[254.65px]">
                 <div className="px-[15px] mb-[18px]">
                     <h3 className="text-[18px] font-semibold mb-[12px]">{name}</h3>
                     <div className="mb-[12px]">
-                        {ratings && ratings.map((rating,index)=> <img key={index} src={starIcon} alt="" />)}
+                        {ratings && ratings.map((rating,index)=> <img loading="lazy"key={index} src={starIcon} alt="" />)}
                     </div>
                     <p className="text-[12px] text-[#666666]">{desc}</p>
                 </div>
                 <div className="flex items-center gap-[12px] px-[15px]">
-                    {socials.map((social,index) => <img className="cursor-pointer" key={index} src={social} alt="" />)}
+                    {socials.map((social,index) => <img loading="lazy"className="cursor-pointer" key={index} src={social} alt="" />)}
                 </div>
             </div>
         </div>

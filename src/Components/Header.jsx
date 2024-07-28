@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 bg-white max-w-[1440px] mx-auto px-8 z-40">
       <div className="max-w-[1080px] mx-auto py-[1.125rem] flex items-center justify-between">
-        <img src={Logo} alt="Logo" />
+        <img loading="lazy"src={Logo} alt="Logo" />
         <nav
           className={`sm:flex items-center justify-between basis-[70%] h-fit py-4 absolute sm:static inset-0 ${
             isOpen ? "block" : "hidden"

@@ -49,21 +49,21 @@ const Contact = () => {
                 <h2 className="mb-[30px] text-[30px] font-semibold">Find us</h2>
                 <div className="flex flex-col gap-[22px]">
                     <div className="p-[15px] rounded-[9px] bg-[#FBFBFB] border border-[#F3F3F3] flex items-center">
-                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img src={phoneIcon} alt="" /></div>
+                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img loading="lazy"src={phoneIcon} alt="" /></div>
                         <div>
                             <h3 className="mb-[6px] text-[15px] font-semibold">Call Us</h3>
                             <p className="text-[12px] text-[#666666]">+(08) 255 201 888</p>
                         </div>
                     </div>
                     <div className="p-[15px] rounded-[9px] bg-[#FBFBFB] border border-[#F3F3F3] flex items-center">
-                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img src={mailIcon} alt="" /></div>
+                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img loading="lazy"src={mailIcon} alt="" /></div>
                         <div>
                             <h3 className="mb-[6px] text-[15px] font-semibold">Email Now</h3>
                             <p className="text-[12px] text-[#666666]">Hello@procleaning.com</p>
                         </div>
                     </div>
                     <div className="p-[15px] rounded-[9px] bg-[#FBFBFB] border border-[#F3F3F3] flex items-center">
-                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img src={locationIcon} alt="" /></div>
+                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img loading="lazy"src={locationIcon} alt="" /></div>
                         <div>
                             <h3 className="mb-[6px] text-[15px] font-semibold">Address</h3>
                             <p className="text-[12px] text-[#666666]">7510, Brand Tower, New York, USA</p>

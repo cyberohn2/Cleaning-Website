@@ -24,12 +24,12 @@ const serviceDetails = [
 const ServiceItem = ({image, title, desc}) =>{
     return(
         <div className="pb-[22px]">
-            <img className="rounded-[22.5px] mb-[12px]" src={image} alt={title} />
+            <img loading="lazy"className="rounded-[22.5px] mb-[12px]" src={image} alt={title} />
             <div className="mb-[18px]">
                 <h3 className="text-[18px] font-semibold mb-[12px]">{title}</h3>
                 <p className="text-[12px] text-[#666666]">{desc}</p>
             </div>
-            <button className="border border-black rounded-[4.5px] px-[15px] py-2 text-[12px] hover:bg-[#36B864] hover:text-white hover:border-white">Book Now <img src={ArrowSVG} alt="" className="w-[15px] aspect-square inline"/></button>
+            <button className="border border-black rounded-[4.5px] px-[15px] py-2 text-[12px] hover:bg-[#36B864] hover:text-white hover:border-white">Book Now <img loading="lazy"src={ArrowSVG} alt="" className="w-[15px] aspect-square inline"/></button>
         </div>
     )
 }

@@ -26,7 +26,7 @@ const blogDetails = [
 const BlogItem = ({image, name, title, desc}) =>{
     return(
         <div className="rounded-[22.5px] border border-[#83A790] text-center">
-            <img className="mb-[27px] rounded-t-[22.5px] w-full" src={image} alt="" />
+            <img loading="lazy"className="mb-[27px] rounded-t-[22.5px] w-full" src={image} alt="" />
             <div className="flex flex-col px-[15px] pb-[15px]">
                 <p className="mb-[9px] text-[10.5px] text-[#666666] ">{name}</p>
                 <h3 className="mb-[12px] font-bold text-[15px]">{title}</h3>

@@ -12,27 +12,27 @@ const About = () =>{
                 <p className="text-[12px] text-[#666666] mb-[24px]">We make your space shine! Professional and reliable cleaning service company providing top-notch solutions for homes and businesses. Satisfaction guaranteed!"</p>
                 <div className=" grid grid-cols-2 gap-[12px] justify-between mb-[36px]">
                     <div className="flex items-center p-[8px]  bg-[#F5F4F4] rounded-[3px] gap-[6px]">
-                        <img src={check} alt="" />
+                        <img loading="lazy"src={check} alt="" />
                         <p className="text-[12px] font-semibold">Vetted professionals</p>
                     </div>
                     <div className="flex items-center p-[8px]  bg-[#F5F4F4] rounded-[3px] gap-[6px]">
-                        <img src={check} alt="" />
+                        <img loading="lazy"src={check} alt="" />
                         <p className="text-[12px] font-semibold">Next day availability</p>
                     </div>
                     <div className="flex items-center p-[8px]  bg-[#F5F4F4] rounded-[3px] gap-[6px]">
-                        <img src={check} alt="" />
+                        <img loading="lazy"src={check} alt="" />
                         <p className="text-[12px] font-semibold">Standard cleaning tasks</p>
                     </div>
                     <div className="flex items-center p-[8px]  bg-[#F5F4F4] rounded-[3px] gap-[6px]">
-                        <img src={check} alt="" />
+                        <img loading="lazy"src={check} alt="" />
                         <p className="text-[12px] font-semibold">Affordable Prices</p>
                     </div>
                     <div className="flex items-center p-[8px]  bg-[#F5F4F4] rounded-[3px] gap-[6px]">
-                        <img src={check} alt="" />
+                        <img loading="lazy"src={check} alt="" />
                         <p className="text-[12px] font-semibold">Best Quality</p>
                     </div>
                     <div className="flex items-center p-[8px]  bg-[#F5F4F4] rounded-[3px] gap-[6px]">
-                        <img src={check} alt="" />
+                        <img loading="lazy"src={check} alt="" />
                         <p className="text-[12px] font-semibold">Affordable Prices</p>
                     </div>
                 </div>

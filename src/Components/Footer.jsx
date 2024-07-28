@@ -7,7 +7,7 @@ const Footer = () =>{
             <div className="pt-[75px] pb-[15px]  text-white max-w-[1080px] mx-auto">
                 <div className="flex flex-col sm:flex-row justify-between gap-8">
                     <div className="max-w-[267px] text-center sm:text-left ">
-                        <img className="mb-[18px] mx-auto sm:mx-0" src={footerLogo} alt="" />
+                        <img loading="lazy"className="mb-[18px] mx-auto sm:mx-0" src={footerLogo} alt="" />
                         <p className="text-[12px] font-light">Stay updated with our latest cleaning tips, service updates, and helpful articles on maintaining a spotless home.</p>
                     </div>
                     <div className="text-center sm:text-left">
