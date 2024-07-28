@@ -3,8 +3,8 @@ import QuoteImage from "/images/quote.png"
 
 const Quote = () =>{
     return(
-        <div className="flex justify-between py-[56px]">
-            <div className="max-w-[395.25px]">
+        <div className="flex flex-col sm:flex-row justify-between py-[56px] max-w-[1080px] mx-auto px-8">
+            <div className="max-w-[395.25px] mb-8 sm:mb-0">
                 <div className="mb-[39px]">
                     <p className="text-[12px] mb-[9px]">Affordable cleaning solutions</p>
                     <h2 className="font-bold text-[33px] mb-[24px]">High-Quality and Friendly
@@ -13,7 +13,7 @@ const Quote = () =>{
                 </div>
                 <PryCtaBtn text="Get Quote"/>
             </div>
-            <div className="w-[358.5px]" style={{backgroundImage: `url(${QuoteImage})`, backgroundSize: 'cover', backgroundPosition: 'center',}}></div>
+            <div className="w-full sm:w-[500px] h-[325px] sm:h-auto" style={{backgroundImage: `url(${QuoteImage})`, backgroundSize: 'contain', backgroundPosition: 'center',backgroundRepeat: "no-repeat"}}></div>
         </div>
     )
 }

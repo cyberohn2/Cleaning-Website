@@ -44,7 +44,7 @@ const TeamItem = ({image,rating, desc, name}) =>{
 
     return(
         <div className="pb-[15px] rounded-[15px] border">
-            <img src={image} alt="" className="mb-[18px]" />
+            <img src={image} alt="" className="mb-[18px] w-full" />
             <div className="w-[254.65px]">
                 <div className="px-[15px] mb-[18px]">
                     <h3 className="text-[18px] font-semibold mb-[12px]">{name}</h3>
@@ -54,7 +54,7 @@ const TeamItem = ({image,rating, desc, name}) =>{
                     <p className="text-[12px] text-[#666666]">{desc}</p>
                 </div>
                 <div className="flex items-center gap-[12px] px-[15px]">
-                    {socials.map((social,index) => <img  key={index} src={social} alt="" />)}
+                    {socials.map((social,index) => <img className="cursor-pointer" key={index} src={social} alt="" />)}
                 </div>
             </div>
         </div>
@@ -64,16 +64,16 @@ const TeamItem = ({image,rating, desc, name}) =>{
 const Team = () =>{
     return(
         <>
-            <div className="text-[#111d15] pt-[113px] pb-[56px]">
-                <div className="flex items-center justify-between">
-                    <h2 className="text-[33px] font-semibold max-w-[402px]">Effective Cleaning Requires an Expert Cleaning Team</h2>
-                    <div className="max-w-[324.75px]">
-                        <p className="text-[15px] font-semibold mb-[9px]">Expert Team</p>
+            <div className="text-[#111d15] pt-[113px] pb-[56px] max-w-[1080px] mx-auto px-8">
+                <div className="flex items-center gap-2 justify-between">
+                    <h2 className="sm:text-[33px] text-[16px] font-semibold max-w-[402px]">Effective Cleaning Requires an Expert Cleaning Team</h2>
+                    <div className="max-w-[324.75px] text-right sm:text-left">
+                        <p className="sm:text-[15px] text-[12px] font-semibold mb-[9px]">Expert Team</p>
                         <p className="text-[12px] text-[#666666]">We have professional expert cleaning staff ensuring top-notch cleanliness and hygiene for your space.</p>
                     </div>
                 </div>
                 <div className="divider border border-[83A790] my-[30px]"></div>
-                <div className="grid grid-cols-3 gap-[22px]">
+                <div className="grid sm:grid-cols-3 grid-cols-1 gap-[22px]">
                     {teamDetails.map((team, index) => <TeamItem name={team.name} image={team.image} desc={team.desc} key={index} rating={team.rating} /> )}
                 </div>
             </div>

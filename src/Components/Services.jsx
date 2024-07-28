@@ -29,23 +29,23 @@ const ServiceItem = ({image, title, desc}) =>{
                 <h3 className="text-[18px] font-semibold mb-[12px]">{title}</h3>
                 <p className="text-[12px] text-[#666666]">{desc}</p>
             </div>
-            <button className="border border-black rounded-[4.5px] px-[15px] py-2 text-[12px]">Book Now <img src={ArrowSVG} alt="" className="w-[15px] aspect-square inline"/></button>
+            <button className="border border-black rounded-[4.5px] px-[15px] py-2 text-[12px] hover:bg-[#36B864] hover:text-white hover:border-white">Book Now <img src={ArrowSVG} alt="" className="w-[15px] aspect-square inline"/></button>
         </div>
     )
 }
 
 const Services = () =>{
     return(
-        <div className="text-[#111d15] pt-[113px] pb-[56px]">
-            <div className="flex items-center justify-between">
-                <h2 className="text-[33px] font-semibold max-w-[402px]">We always provide the best service</h2>
-                <div className="max-w-[324.75px]">
-                    <p className="text-[15px] font-semibold mb-[9px]">Services</p>
+        <div className="text-[#111d15] pt-[113px] pb-[56px] max-w-[1080px] mx-auto px-8">
+            <div className="flex items-center gap-2 justify-between">
+                <h2 className="sm:text-[33px] text-[16px] font-semibold max-w-[402px]">We always provide the best service</h2>
+                <div className="max-w-[324.75px] text-right sm:text-left">
+                    <p className="sm:text-[15px] text-[12px] font-semibold mb-[9px]">Services</p>
                     <p className="text-[12px] text-[#666666]">While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:</p>
                 </div>
             </div>
             <div className="divider border border-[83A790] my-[30px]"></div>
-            <div className="grid grid-cols-3 gap-[22px]">
+            <div className="grid sm:grid-cols-3 grid-cols-1 gap-[22px]">
                 {serviceDetails.map((service, index) => <ServiceItem title={service.title} image={service.image} desc={service.desc} key={index} /> )}
             </div>
         </div>

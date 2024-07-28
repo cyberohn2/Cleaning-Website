@@ -17,13 +17,13 @@ function App() {
     <>
       <Header />
       <Hero />
-      <section className="px-[101px] max-w-[1080px] mx-auto">
+      <section className="max-w-[1440px] mx-auto  ">
         <Services />
         <Quote />
         <Team />
         <About />
       </section>
-      <section className="px-[101px] max-w-[1080px] mx-auto relative">
+      <section className="max-w-[1440px] mx-auto relative">
         <Pricing />
         <Testimonials />
         <Blog />

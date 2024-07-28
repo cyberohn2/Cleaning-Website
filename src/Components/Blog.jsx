@@ -31,7 +31,7 @@ const BlogItem = ({image, name, title, desc}) =>{
                 <p className="mb-[9px] text-[10.5px] text-[#666666] ">{name}</p>
                 <h3 className="mb-[12px] font-bold text-[15px]">{title}</h3>
                 <p className="text-[12px] font-light text-[#666666] mb-[18px]">{desc}</p>
-                <button className=" px-[30px] py-[15px] bg-[#36B864] text-white rounded-[11.25px]">
+                <button className=" px-[30px] py-[15px] bg-[#36B864] hover:bg-[#111D15] text-white rounded-[11.25px]">
                     Read More
                 </button>
             </div>
@@ -42,16 +42,16 @@ const BlogItem = ({image, name, title, desc}) =>{
 const Blog = () =>{
     return(
         <>
-            <div className="text-[#111d15] pt-[113px] pb-[56px]">
-                <div className="flex items-center justify-between">
-                    <h2 className="text-[33px] font-semibold max-w-[402px]">Stay Updated with Our Tips & Service News!</h2>
-                    <div className="max-w-[324.75px]">
-                        <p className="text-[15px] font-semibold mb-[9px]">Our Blog</p>
+            <div className="text-[#111d15] pt-[113px] pb-[56px] max-w-[1080px] mx-auto px-8">
+                <div className="flex items-center gap-2 justify-between">
+                    <h2 className="sm:text-[33px] text-[16px] font-semibold max-w-[402px]">Stay Updated with Our Tips & Service News!</h2>
+                    <div className="max-w-[324.75px] text-right sm:text-left">
+                        <p className="sm:text-[15px] text-[12px] font-semibold mb-[9px]">Our Blog</p>
                         <p className="text-[12px] text-[#666666]">Stay informed with our latest cleaning tips, service updates, expert advice on maintaining an immaculate home.</p>
                     </div>
                 </div>
                 <div className="divider border border-[83A790] my-[30px]"></div>
-                <div className="grid grid-cols-3 gap-[22px]">
+                <div className="grid sm:grid-cols-3 grid-cols-1 gap-[22px]">
                     {blogDetails.map((blog, index) => <BlogItem name={blog.name} image={blog.image} desc={blog.desc} key={index} title={blog.title} /> )}
                 </div>
             </div>
