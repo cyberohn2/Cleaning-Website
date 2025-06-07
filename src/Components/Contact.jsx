@@ -46,27 +46,27 @@ const Contact = () => {
     return (
         <div id="contact" className="py-[56px] flex flex-col sm:flex-row justify-between gap-4 max-w-[1080px] mx-auto px-8">
             <div className="sm:w-[500px]">
-                <h2 className="mb-[30px] text-[30px] font-semibold">Find us</h2>
+                <h2 className="mb-[30px] text-[30px] font-semibold">Contact J MOBIL INC</h2>
                 <div className="flex flex-col gap-[22px]">
                     <div className="p-[15px] rounded-[9px] bg-[#FBFBFB] border border-[#F3F3F3] flex items-center">
-                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img loading="lazy"src={phoneIcon} alt="" /></div>
+                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[var(--pryClr)]"><img loading="lazy"src={phoneIcon} alt="" /></div>
                         <div>
                             <h3 className="mb-[6px] text-[15px] font-semibold">Call Us</h3>
-                            <p className="text-[12px] text-[#666666]">+(08) 255 201 888</p>
+                            <p className="text-[12px] text-[#666666]">(305) 325-0116</p>
                         </div>
                     </div>
                     <div className="p-[15px] rounded-[9px] bg-[#FBFBFB] border border-[#F3F3F3] flex items-center">
-                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img loading="lazy"src={mailIcon} alt="" /></div>
+                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[var(--pryClr)]"><img loading="lazy"src={mailIcon} alt="" /></div>
                         <div>
                             <h3 className="mb-[6px] text-[15px] font-semibold">Email Now</h3>
-                            <p className="text-[12px] text-[#666666]">Hello@procleaning.com</p>
+                            <p className="text-[12px] text-[#666666]">info@jmobilinc.com</p>
                         </div>
                     </div>
                     <div className="p-[15px] rounded-[9px] bg-[#FBFBFB] border border-[#F3F3F3] flex items-center">
-                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img loading="lazy"src={locationIcon} alt="" /></div>
+                        <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[var(--pryClr)]"><img loading="lazy"src={locationIcon} alt="" /></div>
                         <div>
                             <h3 className="mb-[6px] text-[15px] font-semibold">Address</h3>
-                            <p className="text-[12px] text-[#666666]">7510, Brand Tower, New York, USA</p>
+                            <p className="text-[12px] text-[#666666]">1550 NW 17th Ave, Miami, FL 33125</p>
                         </div>
                     </div>
                 </div>
@@ -74,9 +74,8 @@ const Contact = () => {
             <div className="max-w-[400px]">
                 <div className="mb-[30px]">
                     <p className="text-[12px] mb-[6px]">Contact info</p>
-                    <h2 className="text-[27px] font-semibold mb-[12px]">Keep In Touch</h2>
-                    <p className="text-[12px] text-[#666666]">We prioritize responding to your inquiries promptly to ensure you
-                    receive the assistance you need in a timely manner</p>
+                    <h2 className="text-[27px] font-semibold mb-[12px]">Get in Touch</h2>
+                    <p className="text-[12px] text-[#666666]">We’re here to help with all your auto repair and maintenance needs. Call, visit, or send us a message today!</p>
                 </div>
                 <form onSubmit={handleSubmit}>
                     <div className="mb-[22px] flex flex-col gap-[22px]">
@@ -118,7 +117,7 @@ const Contact = () => {
                         </div>
                         {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
                     </div>
-                    <input className="py-[9px] px-[18px] rounded-[4.5px] bg-[#36B864] hover:bg-[#111D15] text-white" type="submit" value="Send" />
+                    <input className="py-[9px] px-[18px] rounded-[4.5px] bg-[var(--pryClr)] hover:bg-[#111D15] text-white" type="submit" value="Send" />
                 </form>
             </div>
         </div>

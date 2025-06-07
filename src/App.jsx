@@ -19,14 +19,14 @@ function App() {
       <Hero />
       <section className="max-w-[1440px] mx-auto  ">
         <Services />
-        <Quote />
-        <Team />
+        {/* <Quote />
+        <Team /> */}
         <About />
       </section>
       <section className="max-w-[1440px] mx-auto relative">
-        <Pricing />
-        <Testimonials />
-        <Blog />
+        {/* <Pricing /> */}
+        {/* <Testimonials /> */}
+        {/* <Blog /> */}
         <Contact />
       </section>
       <Footer />

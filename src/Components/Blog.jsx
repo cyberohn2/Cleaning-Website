@@ -31,7 +31,7 @@ const BlogItem = ({image, name, title, desc}) =>{
                 <p className="mb-[9px] text-[10.5px] text-[#666666] ">{name}</p>
                 <h3 className="mb-[12px] font-bold text-[15px]">{title}</h3>
                 <p className="text-[12px] font-light text-[#666666] mb-[18px]">{desc}</p>
-                <button className=" px-[30px] py-[15px] bg-[#36B864] hover:bg-[#111D15] text-white rounded-[11.25px]">
+                <button className=" px-[30px] py-[15px] bg-[var(--pryClr)] hover:bg-[#111D15] text-white rounded-[11.25px]">
                     Read More
                 </button>
             </div>

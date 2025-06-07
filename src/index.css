@@ -5,3 +5,7 @@
 *{
     scroll-behavior: smooth;
 }
+
+:root {
+    --pryClr: #e28e06;
+}
