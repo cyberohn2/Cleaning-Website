@@ -23,7 +23,7 @@ const serviceDetails = [
 
 const ServiceItem = ({image, title, desc}) =>{
     return(
-        <div className="pb-[22px]">
+        <div className="pb-[22px] rounded-md">
             <img loading="lazy"className="rounded-[22.5px] mb-[12px]" src={image} alt={title} />
             <div className="mb-[18px]">
                 <h3 className="text-[18px] font-semibold mb-[12px]">{title}</h3>
@@ -45,7 +45,7 @@ const Services = () =>{
                 </div>
             </div>
             <div className="divider border border-[83A790] my-[30px]"></div>
-            <div className="grid sm:grid-cols-3 grid-cols-1 gap-[22px]">
+            <div className="grid sm:grid-cols-3 grid-cols-1 gap-[22px] items-center">
                 {serviceDetails.map((service, index) => <ServiceItem title={service.title} image={service.image} desc={service.desc} key={index} /> )}
             </div>
         </div>

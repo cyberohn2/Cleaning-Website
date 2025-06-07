@@ -20,7 +20,7 @@ const Header = () => {
             isOpen ? "block" : "hidden"
           } bg-[#111D15] sm:bg-transparent top-16 sm:top-auto z-50`}
         >
-          <ul className="flex flex-col sm:flex-row items-center gap-[22px] font-vietnam text-sm">
+          <ul className="flex flex-col sm:flex-row items-center md:gap-[22px] gap-[16px] font-vietnam text-sm">
             <li className="text-white sm:text-[#111D15]"><a href="#hero">Home</a></li> 
             <li className="text-white sm:text-[#111D15]"><a href="#about">About Us</a></li>
             <li className="text-white sm:text-[#111D15]"><a href="#service">Service</a></li>
