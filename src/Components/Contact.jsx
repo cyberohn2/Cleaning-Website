@@ -6,7 +6,6 @@ import locationIcon from "/images/location-icon.svg";
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: "",
-        email: "",
         message: ""
     });
 
@@ -23,11 +22,6 @@ const Contact = () => {
     const validate = () => {
         let formErrors = {};
         if (!formData.name) formErrors.name = "Name is required";
-        if (!formData.email) {
-            formErrors.email = "Email is required";
-        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-            formErrors.email = "Email is invalid";
-        }
         if (!formData.message) formErrors.message = "Message is required";
         return formErrors;
     };
@@ -36,8 +30,11 @@ const Contact = () => {
         e.preventDefault();
         const formErrors = validate();
         if (Object.keys(formErrors).length === 0) {
-            // Form is valid, handle form submission here
-            console.log("Form submitted successfully", formData);
+            // Redirect to WhatsApp with template message
+            const name = encodeURIComponent(formData.name);
+            const message = encodeURIComponent(formData.message);
+            const whatsappMessage = `Hello Leo Cleaning Service, my name is ${name}. ${message}`;
+            window.open(`https://wa.me/2348132254419?text=${whatsappMessage}`, '_blank');
         } else {
             setErrors(formErrors);
         }
@@ -51,22 +48,24 @@ const Contact = () => {
                     <div className="p-[15px] rounded-[9px] bg-[#FBFBFB] border border-[#F3F3F3] flex items-center">
                         <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img loading="lazy"src={phoneIcon} alt="" /></div>
                         <div>
-                            <h3 className="mb-[6px] text-[15px] font-semibold">Call Us</h3>
-                            <p className="text-[12px] text-[#666666]">+(08) 255 201 888</p>
+                            <a href="tel:+2348132254419">
+                                <h3 className="mb-[6px] text-[15px] font-semibold">Call Us</h3>
+                                <p className="text-[12px] text-[#666666]">+2348132254419</p>
+                            </a>
                         </div>
                     </div>
                     <div className="p-[15px] rounded-[9px] bg-[#FBFBFB] border border-[#F3F3F3] flex items-center">
                         <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img loading="lazy"src={mailIcon} alt="" /></div>
                         <div>
                             <h3 className="mb-[6px] text-[15px] font-semibold">Email Now</h3>
-                            <p className="text-[12px] text-[#666666]">Hello@procleaning.com</p>
+                            <p className="text-[12px] text-[#666666]">leocleaningservice@gmail.com</p>
                         </div>
                     </div>
                     <div className="p-[15px] rounded-[9px] bg-[#FBFBFB] border border-[#F3F3F3] flex items-center">
                         <div className="mr-[9px] w-[40.5px] aspect-square rounded-full flex items-center justify-center bg-[#36B864]"><img loading="lazy"src={locationIcon} alt="" /></div>
                         <div>
                             <h3 className="mb-[6px] text-[15px] font-semibold">Address</h3>
-                            <p className="text-[12px] text-[#666666]">7510, Brand Tower, New York, USA</p>
+                            <p className="text-[12px] text-[#666666]">Ewu-oliwo, Sagamu, Ogun State Nigeria.</p>
                         </div>
                     </div>
                 </div>
@@ -92,24 +91,12 @@ const Contact = () => {
                             />
                         </div>
                         {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
-                        <div className="p-[14px] rounded-[3px] bg-white border border-[#F3F3F3] flex items-center">
-                            <label className="mr-[9px] block" htmlFor="email">Email</label>
-                            <input
-                                className="outline-none"
-                                name="email"
-                                id="email"
-                                type="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                            />
-                        </div>
-                        {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                         <div className="p-[14px] rounded-[3px] bg-white border border-[#F3F3F3]">
                             <label className="mb-[9px] block" htmlFor="message">Message</label>
                             <textarea
                                 className="outline-none w-full"
                                 cols="30"
-                                rows="1"
+                                rows="2"
                                 name="message"
                                 id="message"
                                 value={formData.message}

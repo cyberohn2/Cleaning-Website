@@ -22,13 +22,15 @@ const Header = () => {
         >
           <ul className="flex flex-col sm:flex-row items-center md:gap-[22px] gap-[16px] font-vietnam text-sm">
             <li className="text-white sm:text-[#111D15]"><a href="#hero">Home</a></li> 
-            <li className="text-white sm:text-[#111D15]"><a href="#about">About Us</a></li>
             <li className="text-white sm:text-[#111D15]"><a href="#service">Service</a></li>
-            <li className="text-white sm:text-[#111D15]"><a href="#blog">Blog</a></li>
+            <li className="text-white sm:text-[#111D15]"><a href="#about">About Us</a></li>
+            {/* <li className="text-white sm:text-[#111D15]"><a href="#blog">Blog</a></li> */}
             <li className="text-white sm:text-[#111D15]"><a href="#contact">Contact</a></li>
           </ul>
           <div className="flex justify-center sm:justify-end w-full sm:w-auto mt-4 sm:mt-0">
-            <PryCtaBtn text="Get a quote" />
+            <a href="https://wa.me/2348132254419?text=Hello%20Leo%20Cleaning%20Service%2C%20I%20would%20like%20to%20reach%20out%20for%20your%20cleaning%20services." target="_blank" rel="noopener noreferrer">
+              <PryCtaBtn text="Contact Us" />
+            </a>
           </div>
         </nav>
         <img
