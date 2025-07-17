@@ -1,6 +1,6 @@
 import PryCtaBtn from "./PryCtaBtn"
 import SecCtaBtn from "./SecCtaBtn"
-import HeroImg from "/images/hero-img.png" 
+import HeroImg from "/images/hero-img.webp" 
 
 const Hero = () =>{ 
     return(
